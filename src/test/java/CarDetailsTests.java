@@ -18,7 +18,7 @@ public class CarDetailsTests {
         String details = CarUtils.getCarDetails(car);
 
         //Assert
-        Assert.assertEquals("Not able to provide details", details);
+        Assert.assertEquals("2019 Ford Mustang", details);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class CarDetailsTests {
         String details = CarUtils.getCarDetails(car);
 
         ///Assert
-        Assert.assertEquals("Not able to provide details", details);
+        Assert.assertEquals("Ford Mustang", details);
 
     }
 
@@ -52,7 +52,7 @@ public class CarDetailsTests {
         String details = CarUtils.getCarDetails(car);
 
         ///Assert
-        Assert.assertEquals("Not able to provide details", details);
+        Assert.assertEquals("Ford", details);
     }
 
     @Test
@@ -63,13 +63,13 @@ public class CarDetailsTests {
         car.setMake("Ford");
         car.setModel("Mustang");
         car.setYear("2019");
-        car.setColor("Color");
+        car.setColor("Black");
 
 
         //Act
         String details = CarUtils.getCarDetails(car);
 
         ///Assert
-        Assert.assertEquals("Not able to provide details", details);
+        Assert.assertEquals("2019 Ford Mustang Black", details);
     }
 }
